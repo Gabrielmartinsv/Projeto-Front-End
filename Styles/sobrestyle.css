@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-weight: 530;   
+}
+
+body{
+    background-image: url(/Assets/back.jpg);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    z-index: 101; 
+    align-items: center;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    justify-content: space-around;
+    font-size: 14px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.categoria:hover{
+    color: black;
+}
+
+.logo {
+    display: flex;
+    max-width: 15%;
+    max-height: 60%;
+}
+
+.logo img {
+    max-width: 150%;
+    max-height: 130%;
+}
+
+
+.categoria a{
+   text-decoration: none;
+   outline: none;
+   color: gray;
+   width: 5%;
+   text-align: center;
+   padding: 15px;
+}
+
+.categoria a:hover{
+    background-color: rgb(228, 228, 228);
+    color: black;
+    padding: 20px;
+    transition: 0.2s;
+}
+
+input[type="search"]{
+    padding: 8px 30px 4px 8px;
+    border: 1px solid black;
+    margin-right: -4px;
+}
+
+.search1 {
+    display: flex;
+    width: 226px;
+    height: 38px;
+}
+
+.carrinhos a {
+    display: flex;
+}
+
+button{
+    float: right;
+    border: none;
+    padding: 5px 8px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+button img{
+    max-height: 23px;
+}
+
+button:hover{
+    background-color: rgb(109, 109, 109);
+    transition: 0.2s;
+}
+
+.shopc img{
+    height: 35px;
+    margin-left: -40px;
+    margin-top: 5px;
+}
+
+/* 0000000000000000000000 */
+
+section .card .image{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: #000;
+}
+
+section .card .image img{
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.card{
+    position: relative;
+    border-radius: 20px;
+    background: #fff;
+    margin: 20px 0;
+    width: 230px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+}
+
+.card:hover{
+   transform: scale(1.03);
+   transition: 0.3s;
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    height: 48%;
+    width: 100%;
+    background: #000;
+    border-radius: 20px 20px 0 0;
+   
+}
+
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+.card .media-icons i{
+    margin: 10px 3px;
+    color: #000;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 27px;
+}
+
+.card .media-icons{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+
+}
+
+.card .media-icons i:hover{
+    opacity: 1;
+}
+
+.card .nome-funcao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+.nome-funcao .nome{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.nome-funcao .funcao{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+section{
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot {
+    display: flex;
+    background-color: black;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    text-align: center;
+    align-self: flex-end;
+    z-index: 999; /* Ajuste o z-index conforme necessário */
+}

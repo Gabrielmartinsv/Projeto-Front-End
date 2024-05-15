@@ -1,0 +1,399 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-weight: 530;   
+}
+
+body{
+    background-image: url(/Assets/back.jpg);
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 100; 
+    align-items: center;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    justify-content: space-around;
+    font-size: 14px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra na parte inferior da borda */
+}
+
+.categoria:hover{
+    color: black;
+}
+
+.logo {
+    display: flex;
+    max-width: 15%;
+    max-height: 60%;
+}
+
+.logo img {
+    max-width: 150%;
+    max-height: 130%;
+}
+
+.categoria a{
+   text-decoration: none;
+   outline: none;
+   color: gray;
+   width: 5%;
+   text-align: center;
+   padding: 15px;
+}
+
+.categoria a:hover{
+    background-color: rgb(228, 228, 228);
+    color: black;
+    padding: 20px;
+    transition: 0.2s;
+}
+
+input[type="search"]{
+    padding: 8px 30px 4px 8px;
+    border: 1px solid black;
+    margin-right: -4px;
+}
+
+.search1 {
+    display: flex;
+    width: 226px;
+    height: 38px;
+}
+
+.carrinhos a {
+    display: flex;
+}
+
+button{
+    float: right;
+    border: none;
+    padding: 5px 8px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+button img{
+    max-height: 23px;
+}
+
+button:hover{
+    background-color: rgb(109, 109, 109);
+    transition: 0.2s;
+}
+
+.shopc img{
+    height: 35px;
+    margin-left: -40px;
+    margin-top: 5px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding-top: 20px;
+}
+
+footer .section1{
+    margin-top: 40px;
+}
+
+.section1 .imgFoot img{
+    height: 280px;
+    margin-right: -90px;
+}
+
+
+.section1 .col h4{
+    font-weight: 600;
+    margin-bottom: 5px;
+} 
+
+.section1 .col a{
+    text-decoration: none;
+    outline: none;
+    color: #999999;
+} 
+
+.section1 .col a:hover{
+    color: white;
+    transition: 0.2s;
+}
+
+
+.section1 .colPg .news p{
+    font-weight: 600;
+
+}
+
+
+.section1 .colPg .news input[type="email"]{
+        padding: 10px 130px 10px 8px;
+        border: none;
+        margin-right: -4px;
+        margin-left: 8px;
+        margin-bottom: 40px;
+}
+
+.section1 .colPg .news input[type="submit"]{
+    padding: 8px 30px 10px 25px;
+    margin-left: -2px;
+    border: none;
+    border-left: 1px solid black;
+    text-align: center;
+    cursor: pointer;;
+    font-weight: 900;
+    background-color: white;
+    font-size: 15px;
+}
+
+.section1 .colPg .news input[type="submit"]:hover{
+    background-color: rgb(202, 202, 202);
+    transition: 0.3s;
+}
+
+.section1 .colPg{
+    margin-right: 80px;
+    margin-top: 30px;
+}
+
+.section1 .colPg .ass{
+    margin-right: 30px;
+   
+}
+
+.section1 .colPg h4{
+    margin-bottom: 10px;
+    margin-left: 8px;
+    font-weight: 600;
+}
+
+.section1 .col{
+    margin-top: 30px;
+}
+
+.section1  .pagIcons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5em;
+    text-align: center;
+    margin-left: 8px;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Ate aqui*/
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+    margin-top: 150px;
+    margin-bottom: 250px;
+}
+
+.slider {
+    margin: 0 auto;
+    width: 360px;
+    height: 550px;
+    overflow: hidden;
+}
+
+.slider a {
+    text-decoration: none;
+}
+
+.camisas1 {
+    text-align: left;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.slides {
+    width: 400%;
+    height: 300px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 1s;
+}
+
+.slide img {
+    width: 100%;
+}
+
+#radio1:checked ~ .primeiro {
+    margin-left:0;
+}
+
+#radio2:checked ~ .segundo {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .terceiro {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .quarto {
+    margin-left: -75%;
+}
+
+.slider2 {
+    margin: 0 auto;
+    width: 180px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.calcas1 {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.slides2 {
+    width: 400%;
+    height: 300px;
+    display: flex;
+}
+
+.slides2 input {
+    display: none;
+}
+
+.slide2 {
+    width: 25%;
+    position: relative;
+    transition: 1s;
+}
+
+#radio5:checked ~ .quinto {
+    margin-left:0;
+}
+
+#radio6:checked ~ .sexto {
+    margin-left: -25%;
+}
+
+#radio7:checked ~ .setimo {
+    margin-left: -50%;
+}
+
+#radio8:checked ~ .oitavo {
+    margin-left: -75%;
+}
+
+.slider3 {
+    margin: 0 auto;
+    width: 180px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.tenis1 {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.slides3 {
+    width: 400%;
+    height: 300px;
+    display: flex;
+}
+
+.slides3 input {
+    display: none;
+}
+
+.slide3 {
+    width: 25%;
+    position: relative;
+    transition: 1s;
+}
+
+.slide3 img {
+    width: 180px;
+    height: 300px;
+}
+
+#radio9:checked ~ .nono {
+    margin-left:0;
+}
+
+#radio10:checked ~ .decimo {
+    margin-left: -25%;
+}
+
+#radio11:checked ~ .decimopri {
+    margin-left: -50%;
+}
+
+#radio12:checked ~ .decimoseg {
+    margin-left: -75%;
+}
+
+.camisas1{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+
+.calcas1{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.tenis1{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
